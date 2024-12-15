@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aaron Layton Portfolio</title>
+  <link rel="icon" href="static/images/icon.png" class="rounded-circle" alt="icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/myscript.js"></script>
+</head>
+
+<body>
+
+  <!--Intro Page--> <!--no-repeat center-->
+  <section class="intro-page d-flex align-items-center justify-content-center text-center text-white" style="height: 100vh; background: url('static/images/intro-bg3.png') center/cover; position: relative;">
+    <div>
+      <h1 class="display-3"><strong>Aaron Layton</strong></h1>
+      <p class="lead">Welcome to My Portfolio</p>
+      <!--<a href="#main-content" class="btn btn-light btn-lg mt-4">Explore</a>-->
+      <a href="https://www.linkedin.com/in/aaron-layton-/" target="_blank"><button class="btn btn-outline-light"><i class="fa-brands fa-linkedin fa-xl"></i></button></a>
+      <button class="btn btn-outline-light" onclick="toast()">CV</button>
+    
+      <div class="toast-container position-fixed top-0 end-0 p-2">
+        <div id="cvToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+          <div class="toast-header">
+            <strong class="me-auto">Downloads</strong>
+            <small>just now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body text-start">
+            AaronLaytonCV.pdf
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    <a href="static/AaronLaytonCV.pdf" download="AaronLaytonCV" class="btn btn-outline-light">CV</a>
+    -->
+
+    <a href="#main-content" class="position-absolute bottom-0 translate-middle-x pb-5"><i
+        class="fa-solid fa-chevron-down fa-bounce fa-2xl"></i></a>
+  </section>
+
+
+  <!--Main Content-->
+  <div id="main-content" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0"> <!--data-bs-theme="light"-->
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+      <div class="container-fluid">
+
+        <ul class="navbar-nav">
+          <li class="nav-item me-auto home"><a class="nav-link" href="#section1">Aaron Layton</a></li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#section2"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section3"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section4"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section5"><i class="fa-solid fa-chart-line"></i> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section6"><i class="fa-solid fa-user"></i> Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<div id="section1" class="container-fluid centered summary" style="padding:150px 20px;">
+
+  <img class="m-5" src="static/images/me.jpg">
+
+  <p class="summary-p m-5">
+    Final year computing student with a strong foundation in software development, database administration/analysis and web development.
+    Well-versed in IT security, cloud services and version control systems, with hands on experience in a variety of projects.
+    Equally comfortable collaborating in team environments and managing projects independently.
+    A quick learner who embraces challenges and has always enjoyed problem-solving.
+  </p>
+
+</div><!--End of Section-->
+
+
+    <div id="section2" class="container-fluid" style="padding:200px 20px;">
+      <div class="section-box">
+      <h1>Education</h1>
+
+      <div class="container mt-5" style="width: 70%;">
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+              role="tab" aria-controls="tab1" aria-selected="true">
+              TUD
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"
+              aria-controls="tab2" aria-selected="false">
+              Maynooth
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="myTabContent">
+
+          <!-- Tab 1 Content -->
+          <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+            <div class="tab-content-item">
+              <a href="https://www.tudublin.ie/" target="_blank"><img src="static/images/tud.png" alt="Sample Image"></a>
+              <div>
+                <h4>Technological University Dublin - Tallaght</h4>
+                <p>
+                  My 2nd-4th years of studying would take place at TUD in Tallaght.
+                  Where I focused on advancing my knowledge in software development, database management, and web
+                  design, encountering various programming technologies and frameworks along the way.
+                  I worked on many projects during this time, which have strengthened my problem-solving skills and
+                  deepened my understanding of key technologies.
+                  Collaborative and independent work on academic assignments, combined with a 6 month work placement,
+                  has provided me with valueable hands-on experience, preparing me for the dynamic challenges of the
+                  tech industry.
+                </p>
+              </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+              <!--Year 4-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Year 4
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <table class="table table-light table-striped">
+                      <thead>
+                        <tr>
+                          <th>Current Modules</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Final Year Project</td>
+                        </tr>
+                        <tr>
+                          <td>Enterprise Application Development</td>
+                        </tr>
+                        <tr>
+                          <td>Applied Machine Learning</td>
+                        </tr>
+                        <tr>
+                          <td>Enterprise Performance Architecture</td>
+                        </tr>
+                        <tr>
+                          <td>Interactive Media Design</td>
+                        </tr>
+                        <tr>
+                          <td>Information Management</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!--Year 3-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Year 3 - GPA 3.21
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <table class="table table-light table-striped">
+                      <thead>
+                        <tr>
+                          <th>Modules</th>
+                          <th>Grade</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Experiental Learning</td>
+                          <td>PASS</td>
+                        </tr>
+                        <tr>
+                          <td>Data Structures & Algorithms</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Data Analysis</td>
+                          <td>B+</td>
+                        </tr>
+                        <tr>
+                          <td>Operating Systems</td>
+                          <td>B+</td>
+                        </tr>
+                        <tr>
+                          <td>Big Data Technologies</td>
+                          <td>B</td>
+                        </tr>
+                        <tr>
+                          <td>Server-side Web Development</td>
+                          <td>B-</td>
+                        </tr>
+                        <tr>
+                          <td>Cloud Services & Distributed Computing</td>
+                          <td>C+</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!--Year 2-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Year 2 - GPA 3.79
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <table class="table table-light table-striped">
+                      <thead>
+                        <tr>
+                          <th>Modules</th>
+                          <th>Grade</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Routing & Switching Essentials</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Management Science</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Database Administration & Analysis</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Advanced Database Technologies</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Discrete Mathematics 2</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Client-Side Web Development</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Information Security</td>
+                          <td>B+</td>
+                        </tr>
+                        <tr>
+                          <td>Software Development 3</td>
+                          <td>B+</td>
+                        </tr>
+                        <tr>
+                          <td>Network Fundementals</td>
+                          <td>B+</td>
+                        </tr>
+                        <tr>
+                          <td>Software Quality Assurance & Testing</td>
+                          <td>B</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Tab 2 Content -->
+          <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+            <div class="tab-content-item">
+              <a href="https://www.maynoothuniversity.ie/" target="_blank"><img src="static/images/maynooth.png" alt="Sample Image"></a>
+              <div>
+                <h4>Maynooth University</h4>
+                <p>
+                  After deciding to leave my apprenticeship in the summer of 2020. I enrolled in a Bachelor of Arts
+                  Degree at Maynooth University.
+                  I studied there for two years, pursuing a double major in Computer Science & Finance. However, I soon
+                  realized that Finance just wasn't for me.
+                  I tried to drop Finance or change courses to focus solely on Computer Science but unfortunately that
+                  wasn't possible at Maynooth.
+                  I made the decision to move to TUD in Tallaght to a degree in Computing with Software Development,
+                  unfortunately I had to repeat Year 2 as I didn't accumulate enough credits in Computer Science to
+                  proceed to year 3 in Tallaght.
+                  While my studies in Maynooth University weren't a complete success, it gave me a basic understanding
+                  of computing aspects & methodologies which I would build on in my preceding academics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div><!--End of Section-->
+
+
+    <div id="section3" class="container-fluid" style="padding:200px 20px;">
+      <h1>Projects</h1>
+
+      <div id="carouselIndicators" class="carousel slide carousel-fade centered mt-4" data-bs-ride="carousel">
+        <div class="carousel-indicators centered">
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="static/images/proj1.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#p1Modal"><h5>Final Year Project</h5></button>
+              <p>Code Analyzer - Industry backed by IBM</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="static/images/proj2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#p2Modal"><h5>Second Year Project</h5></button>
+              <p>E-Commerce Website</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="static/images/proj3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#p3Modal"><h5>Hashing Problem</h5></button>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="modal fade" id="p1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Final Year Project</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Currently working on my final year project which is industry backed by
+              IBM. The aim of our project is to create a Git-hook which will scan com-
+              mitted code for possible optimisations or code smells and then output
+              this information to an interactive dashboard which the developer can
+              leverage to improve their code.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="p2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Cinema Booking Website</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Group project involving the development and deployment of a movie
+              booking website using Django MVC framework. Utilized GitHub for
+              version control and collaborative development on our project. We tested
+              our features and access controls using Django unit tests.
+              <strong>Key Features: </strong>Account authorization & actions, search/filter movies,
+              make a booking & payment, leave a review, view trailers.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="p3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Hashing Problem</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Individual project in which I was tasked with finding two grammatically and semantically correct English sentences whose hash value, using SHA-256, are as close as possible. 
+              I could use any method of my choice.
+              <strong>Problems faced: </strong> Inputting suitable data, run time duration. 
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div><!--End of Section-->
+
+
+    <div id="section4" class="container-fluid" style="padding:200px 20px;">
+      <div class="section-box">
+      <h1>Work Experience</h1>
+      <div class="container mt-5">
+        <div class="row g-4 centered">
+
+          <!-- Card 1 -->
+          <div class="col-md-3">
+            <div class="card">
+              <a href="https://aib.ie/" target="_blank"><img src="static/images/aib_logo.png" class="card-img-top" alt="Card 1"></a>
+              <div class="card-body">
+                <h5 class="card-title">AIB</h5>
+                <p class="card-text">Internship</p>
+                February - August 2024
+                <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+              </div>
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aibModal">Read more</button>
+              <!-- Modal -->
+              <div class="modal fade" id="aibModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Mainframe DBA & Security</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      During my third year of college, I completed a 6-month internship with AIB, where I worked evenly
+                      between two different teams.
+                      I contributed to managing and optimizing mainframe databases, I also supported the automation of
+                      Security assurance and attestation though the use of Mainframe Security tools.
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-3">
+            <div class="card">
+              <a href="https://www.uniphar.ie/" target="_blank"><img src="static/images/uniphar_logo.png" class="card-img-top" alt="Card 2"></a>
+              <div class="card-body">
+                <h5 class="card-title">Uniphar</h5>
+                <p class="card-text">Part-time</p>
+                September 2020 - Present
+              </div>
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#unipharModal">Read more</button>
+              <!-- Modal -->
+              <div class="modal fade" id="unipharModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Warehouse Operative</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Trained and experienced on many different tasks, including ride-on and VNA forklift.
+                      Most of which revolve around order picking, packing, and sorting of pharmaceutical products.
+                      Regularly interact with inventory management systems and automated order processing.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-3">
+            <div class="card">
+              <a href="https://cesolutions.ie/" target="_blank"><img src="static/images/ces_logo.jpg" class="card-img-top" alt="Card 3"></a>
+              <div class="card-body">
+                <h5 class="card-title">CES</h5>
+                <p class="card-text">Apprenticeship</p>
+                September 2019 - July 2020
+              </div>
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cesModal">Read more</button>
+              <!-- Modal -->
+              <div class="modal fade" id="cesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Refrigeration & Air-Conditioning Engineer</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Worked alongside several different engineers and completed a diverse range of service and
+                      installation jobs while dealing directly with customers of the company on a daily basis.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+    </div><!--End of Section-->
+
+    <div id="section5" class="container-fluid" style="padding:200px 20px;">
+      <div class="section-box">
+
+      
+      <h1>Skills</h1>
+
+      <div class="container" style="width: 60%;">
+
+        <div class="row">
+          <div class="col-md-6 progress-container">
+            <div>Software Development</div>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+            </div>
+          </div>
+          <div class="col-md-6 progress-container">
+            <div>Web Development</div>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 progress-container">
+            <div>Database Admin/Analysis</div>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+            </div>
+          </div>
+          <div class="col-md-6 progress-container">
+            <div>AI/ML</div>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 progress-container">
+            <div>IT Security</div>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+            </div>
+          </div>
+          <div class="col-md-6 progress-container">
+            <div>Cloud Services</div>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="mt-5">Software/Frameworks</h2>
+      <div class="centered">
+        <div class="frameworks-container" id="frameworksContainer">
+          <img src="static/images/frameworks/dotnet.png">
+          <img src="static/images/frameworks/aws.png">
+          <img src="static/images/frameworks/azure.png">
+          <img src="static/images/frameworks/blazor.png">
+          <img src="static/images/frameworks/bootstrap.png">
+          <img src="static/images/frameworks/c_sharp.png">
+          <img src="static/images/frameworks/c++.png">
+          <img src="static/images/frameworks/css.png">
+          <img src="static/images/frameworks/django.png">
+          <img src="static/images/frameworks/docker.png">
+          <img src="static/images/frameworks/github.png">
+          <img src="static/images/frameworks/google_cloud.png">
+          <img src="static/images/frameworks/html.png">
+          <img src="static/images/frameworks/java.png">
+          <img src="static/images/frameworks/javascript.png">
+          <img src="static/images/frameworks/mongo.png">
+          <img src="static/images/frameworks/oracle.png">
+          <img src="static/images/frameworks/pandas.png">
+          <img src="static/images/frameworks/python.png">
+          <img src="static/images/frameworks/react.png">
+        </div>
+    </div>
+
+  </div>
+    </div><!--End of Section-->
+
+
+    <div id="section6" class="container-fluid" style="padding:200px 20px;">
+      <div class="section-box">        
+      
+      <h1>Contact Me</h1>
+      <p>Feel free to leave me a message, or contact me on any of the platforms below.</p>
+
+      <div class="container mt-5" style="width: 60%;">
+        <div class="row">
+
+          <div class="col-md-6">
+            <form id="messageForm" class="needs-validation">
+              <div class="form-floating mb-3" data-mdb-input-init>
+                <input type="text" class="form-control" placeholder="Your Name" id="nameInput" required>
+                <label for="nameInput">Your Name</label>
+              </div>
+              <div class="form-floating mb-3" data-mdb-input-init>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+                <label for="emailInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3" data-mdb-input-init>
+                <input type="number" class="form-control" id="numberInput" placeholder="+123 456-789-0123" required>
+                <label for="numberInput">Phone Number</label>
+              </div>
+              <div class="form-floating mb-3" data-mdb-input-init>
+                <textarea class="form-control" placeholder="Leave a message here" id="commentsInput" style="height: 100px" required></textarea>
+                <label for="commentsInput">Message</label>
+              </div>
+              
+              <button id="submitBtn" class="btn btn-success btn-lg" data-bs-toggle="messageModal">Send</button>
+            </form>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Message Sent</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Thank you for your message, I will respond in due course.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="col-md-6 my-info">
+            <p><i class="fa-solid fa-location-dot"></i> 12 Watermeadow Drive, Old Bawn, Tallaght,<br>D24 YW8D</p>
+            <p><i class="fa-solid fa-phone"></i> +353 085-155-2922</p>
+            <p><i class="fa-solid fa-envelope"></i> aaronlayton14@gmail.com</p>
+            <p>_________________________________________________</p>
+            <div class="icon-row text-white">
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+              <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+              <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>            
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    </div><!--End of Section-->
+
+
+  </div><!--End of Main Content-->
+
+
+</body>
+
+</html>
