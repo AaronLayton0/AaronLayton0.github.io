@@ -33,7 +33,7 @@
             <small>just now</small>
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
           </div>
-          <div class="toast-body text-start">
+          <div class="toast-body text-start text-dark">
             AaronLaytonCV.pdf
           </div>
         </div>
@@ -43,7 +43,7 @@
     <a href="static/AaronLaytonCV.pdf" download="AaronLaytonCV" class="btn btn-outline-light">CV</a>
     -->
 
-    <a href="#main-content" class="position-absolute bottom-0 translate-middle-x pb-5"><i
+    <a href="#main-content" class="position-absolute bottom-0 translate-middle-x pb-5 text-white"><i
         class="fa-solid fa-chevron-down fa-bounce fa-2xl"></i></a>
   </section>
 
@@ -126,7 +126,7 @@
             </div>
 
             <!-- Accordion -->
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush border" id="accordionFlushExample">
 
               <!--Year 4-->
               <div class="accordion-item">
@@ -317,6 +317,7 @@
 
 
     <div id="section3" class="container-fluid" style="padding:200px 20px;">
+      
       <h1>Projects</h1>
 
       <div id="carouselIndicators" class="carousel slide carousel-fade centered mt-4" data-bs-ride="carousel">
@@ -685,8 +686,13 @@
     </div><!--End of Section-->
 
 
+    <div class="centered">
+      <button id="joke-button" class="btn btn-light btn-sm" onclick="getData()">Bonus</button>
+    </div>
+
   </div><!--End of Main Content-->
 
+  
 
 </body>
 

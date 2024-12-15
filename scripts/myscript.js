@@ -30,3 +30,18 @@ function toast(){
     myToast.show();
 }
 
+async function getData() {
+    const url = "https://official-joke-api.appspot.com/random_joke";
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+  
+      const json = await response.json();
+      alert(json.setup);
+      alert(json.punchline);
+    } catch (error) {
+      console.error(error.message);
+    }
+  }

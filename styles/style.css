@@ -44,7 +44,6 @@ body
     padding: 30px; /* Internal spacing */
     margin: 0px auto; /* Space between sections */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Shadow for depth */
-    max-width: 1200px; /* Limit content width */
 }
 
 #section1 img
@@ -52,6 +51,16 @@ body
     max-width: 250px;
     border-radius: 10px;
     border: 2px solid #0093cb;
+}
+#section1 img:hover
+{
+    transform: translateY(-10px);
+
+}
+.summary-p:hover
+{
+    transform: translateY(-10px);
+
 }
 
 .summary-p
@@ -94,7 +103,7 @@ body
 }
 
 .carousel img{
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .card {
